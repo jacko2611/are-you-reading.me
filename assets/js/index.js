@@ -11,17 +11,12 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is your GitHub user name?',
-        name: 'github',
-    },
-    {
-        type: 'input',
         message: 'Please write a detailed description of your project.',
         name: 'description',
     },
     {
         type: 'input',
-        message: 'Please write any installation insctructions necessary',
+        message: 'Please write any installation instructions necessary',
         name: 'instructions'
     },
     {
@@ -44,11 +39,26 @@ const questions = [
         message: 'What is your email address?',
         name: 'email'
     },
+    {
+        type: 'input',
+        message: 'What is your GitHub user name?',
+        name: 'github',
+    },
 ]
-
+inquirer.prompt(questions);
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) 
+    fs.writeFile(fileName, data, function(error) {
+        console.log(fileName);
+        console.log(data);
+        if (error) {
+            return console.log(error)
+        } else {
+            console.log("File generated succesfully");
+        }
+    })
+
 
 // TODO: Create a function to initialize app
 function init() {}
