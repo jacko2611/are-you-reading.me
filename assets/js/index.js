@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { generate } = require('rxjs');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -16,13 +17,18 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please write any installation instructions necessary',
+        message: 'Please write any installation instructions or dependencies necessary for the application',
         name: 'instructions'
     },
     {
         type: 'input',
-        message: 'Any usage information the user should know about?',
+        message: 'Any usage information or commands the user should know about?',
         name: 'usage'
+    },
+    {
+        type: 'input',
+        message: 'What license is being used for this application?',
+        name: 'license'
     },
     {
         type: 'input',
@@ -49,11 +55,11 @@ inquirer.prompt(questions);
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) 
-    fs.writeFile(fileName, data, function(error) {
+    fs.writeFile(fileName, data, function(err) {
         console.log(fileName);
         console.log(data);
         if (error) {
-            return console.log(error)
+            return console.log(err)
         } else {
             console.log("File generated succesfully");
         }
@@ -61,7 +67,13 @@ function writeToFile(fileName, data)
 
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+        .then(function(data) {
+            writeToFile("README.md" , generateMD(data));
+            console.log(data);
+        })
+}
 
 // Function call to initialize app
 init();
