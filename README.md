@@ -1,5 +1,5 @@
 # are-you-reading.me
-https://github.com/jacko2611/are-you-reading.me
+https://github.com/www.github.com/jacko2611/are-you-reading.me
 ## Description
 A comprehensive README generator.
 ## Table of Contents
@@ -9,9 +9,9 @@ A comprehensive README generator.
 * [Contributions](#contribution)
 * [Tests](#testing)
 ## Installation
-No installation instructions necessary. The dependencies to run the application are "inquirer" and "fs".
+The dependencies necessary to run the application are "inquirer" and "fs".
 ## Usage
-The user needs to use the "node index.js" command in the terminal.
+The user needs to use the "node index.js" command to run the application.
 ## License
 This project is licensed under the MIT license.
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -21,4 +21,7 @@ N/A
 Testing is done using the above command.
 ## Contact Me
 If you have any questions about this repository or application, feel free to contact me at:
-jacksonkent70@gmail.com github.com/jacko2611
+jacksonkent70@gmail.com or www.github.com/jacko2611
+
+https://drive.google.com/file/d/1P2wZOQQl2tAEj2EfORIjVI1v5czvAAvs/view
+  
