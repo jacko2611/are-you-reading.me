@@ -52,32 +52,31 @@ function renderLicenseBadge(license) {
 const generateMD = function(data) {
     return `
 
-    # ${data.title}
-    https://github.com/${data.github}/${data.title}
-    # Description
-    ${data.description}
-    # Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributions](#contribution)
-    * [Tests](#testing)
-    # Installation
-    The following dependencies are necessary to run the application correctly.
-    # Usage
-    The following outlines any usage instructions or commands necessary.
-    # License
-    This project is licensed under the ${data.license} license.
-    ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-    # Contributions
-    ${data.contribution}
-    # Test
-    The following should be done to complete a test of the application: ${data.testing}
-    # Contact Me
-    If you have any questions about this repository or application, feel free to contact me at:
-    ${data.email}
-    ${data.github}
-    
+# ${data.title}
+https://github.com/${data.github}/${data.title}
+## Description
+${data.description}
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributions](#contribution)
+* [Tests](#testing)
+## Installation
+${data.installation}
+## Usage
+${data.usage}
+## License
+This project is licensed under the ${data.license} license.
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+## Contributions
+${data.contribution}
+## Test
+${data.testing}
+## Contact Me
+If you have any questions about this repository or application, feel free to contact me at:
+${data.email} or ${data.github}
+
     `
 }
 

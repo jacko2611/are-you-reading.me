@@ -18,8 +18,8 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Please write any installation instructions or dependencies necessary for the application',
-        name: 'instructions'
+        message: 'Please write any installation instructions or dependencies necessary for the application.',
+        name: 'installation'
     },
     {
         type: 'input',
@@ -33,7 +33,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'List any collaborators, along with their Github profiles and any sources that need attribution',
+        message: 'List any collaborators, along with their Github profiles and any sources that need attribution.',
         name: 'contribution'
     },
     {
@@ -48,7 +48,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is your GitHub user name?',
+        message: 'Please provide a link to your GitHub account.',
         name: 'github',
     },
 ]
