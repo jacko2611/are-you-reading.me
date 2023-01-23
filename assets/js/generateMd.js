@@ -4,7 +4,7 @@
 function renderLicenseBadge(license) {
     const licenseBadge = license
     if (licenseBadge) {
-      return `![License Badge](https://img.shields.io/badge/License-${licenseBadge}-success)`
+      return `![License Badge](https://img.shields.io/badge/License-${license}-success)`
     } else {
       return ''
     }
