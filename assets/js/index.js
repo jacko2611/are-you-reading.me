@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { generate } = require('rxjs');
+const generateMd = require('./generateMd');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -51,26 +52,25 @@ const questions = [
         name: 'github',
     },
 ]
-inquirer.prompt(questions);
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) 
+function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function(err) {
         console.log(fileName);
         console.log(data);
-        if (error) {
+        if (err) {
             return console.log(err)
         } else {
             console.log("File generated succesfully");
         }
     })
-
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
         .then(function(data) {
-            writeToFile("README.md" , generateMD(data));
+            writeToFile("README.md" , generateMd(data));
             console.log(data);
         })
 }

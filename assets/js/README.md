@@ -1,9 +1,8 @@
-const generateMD = function(data) {
-    return `
-    # ${data.Title}
-    https://github.com/${data.Github}/${data.Title}
+
+    # undefined
+    https://github.com/undefined/undefined
     # Description
-    ${data.description}
+     
     # Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
@@ -15,17 +14,14 @@ const generateMD = function(data) {
     # Usage
     The following outlines any usage instructions or commands necessary.
     # License
-    This project is licensed under the ${data.License} license.
+    This project is licensed under the undefined license.
     ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
     # Contributions
-    ${data.Contribution}
+    undefined
     # Test
-    The following should be done to complete a test of the application: ${data.testing}
+    The following should be done to complete a test of the application:  
     # Contact Me
     If you have any questions about this repository or application, feel free to contact me at:
-    ${data.Email}
-    ${data.Github}
-    ` 
-}
-
-module.exports = generateMD;
+    undefined
+    undefined
+    
