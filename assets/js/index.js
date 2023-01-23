@@ -61,7 +61,7 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err)
         } else {
-            console.log("File generated succesfully");
+            console.log("File generated succesfully!");
         }
     })
 }

@@ -1,8 +1,9 @@
 
-    # undefined
-    https://github.com/undefined/undefined
+
+    # are-you-reading.me
+    https://github.com/jacko2611/are-you-reading.me
     # Description
-     
+    A comprehensive README generator.
     # Table of Contents
     * [Installation](#installation)
     * [Usage](#usage)
@@ -14,14 +15,15 @@
     # Usage
     The following outlines any usage instructions or commands necessary.
     # License
-    This project is licensed under the undefined license.
+    This project is licensed under the MIT license.
     ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
     # Contributions
-    undefined
+    N/A
     # Test
-    The following should be done to complete a test of the application:  
+    The following should be done to complete a test of the application: Testing is done using the above command.
     # Contact Me
     If you have any questions about this repository or application, feel free to contact me at:
-    undefined
-    undefined
+    jacksonkent70@gmail.com
+    jacko2611
+    
     
