@@ -9,7 +9,7 @@ A comprehensive README generator.
 * [Contributions](#contribution)
 * [Tests](#testing)
 ## Installation
-The dependencies necessary to run the application are "inquirer" and "fs".
+No installation required, however the dependencies necessary to run the application are "inquirer" and "fs".
 ## Usage
 The user needs to use the "node index.js" command to run the application.
 ## License
@@ -23,5 +23,3 @@ Testing is done using the above command.
 If you have any questions about this repository or application, feel free to contact me at:
 jacksonkent70@gmail.com or www.github.com/jacko2611
 
-https://drive.google.com/file/d/1P2wZOQQl2tAEj2EfORIjVI1v5czvAAvs/view
-  
